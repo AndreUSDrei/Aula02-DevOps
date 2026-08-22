@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Paulo FC - O Clube da Fé</title>
+    <!-- Fonte do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- Cabeçalho e Navegação -->
+    <header class="navbar">
+        <div class="logo-container">
+            <!-- Usando a sua imagem local. Se ela não estiver na pasta img, basta deixar src="sp-logo.png" -->
+            <img src="img/sp-logo.png" alt="Escudo Oficial do São Paulo FC" class="logo">
+            <span class="brand-name">SÃO PAULO FUTEBOL CLUBE</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#historia">História</a></li>
+                <li><a href="#titulos">Títulos</a></li>
+                <li><a href="#morumbi">Morumbi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero (Destaque Principal) -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>O ÚNICO MAIOR TRICOLOR DA HISTÓRIA</h1>
+            <p>A glória não é um objetivo, é a nossa história. O maior campeão internacional do Brasil. O campeão de TUDO!</p>
+            <a href="#titulos" class="cta-button">Conheça a História</a>
+        </div>
+    </section>
+
+    <!-- Seção de Títulos com animação JS -->
+    <section class="titulos-section" id="titulos">
+        <div class="container">
+            <h2 class="section-title">Sala de Troféus</h2>
+            <div class="stats-grid">
+                <!-- Mundial -->
+                <div class="stat-card">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Mundiais de Clubes</div>
+                    <div class="stat-years">1992, 1993, 2005</div>
+                </div>
+                <!-- Libertadores -->
+                <div class="stat-card">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Libertadores</div>
+                    <div class="stat-years">1992, 1993, 2005</div>
+                </div>
+                <!-- Brasileirão -->
+                <div class="stat-card">
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-label">Campeonatos Brasileiros</div>
+                    <div class="stat-years">77, 86, 91, 06, 07, 08</div>
+                </div>
+                <!-- Copa do Brasil -->
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">Copa do Brasil</div>
+                    <div class="stat-years">2023</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/S%C3%A3o_Paulo_Futebol_Clube.png" alt="Escudo SPFC" class="footer-logo">
+            <p>Desenvolvido para fins acadêmicos | Prática de versionamento no GitHub.</p>
+            <p>&copy; 2026 - Imagens e marcas pertencem ao São Paulo Futebol Clube.</p>
+        </div>
+    </footer>
+
+    <!-- Link para o arquivo JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
