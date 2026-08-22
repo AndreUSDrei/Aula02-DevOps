@@ -121,6 +121,62 @@ body {
     transform: scale(1.05);
 }
 
+/* --- Seção História --- */
+.historia-section {
+    padding: 100px 20px;
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.historia-intro {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+}
+
+.historia-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.historia-card {
+    background-color: var(--spfc-white);
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-bottom: 4px solid var(--spfc-red);
+}
+
+.historia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.historia-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.historia-card h3 {
+    color: var(--spfc-black);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.historia-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 /* Títulos Section */
 .titulos-section {
     padding: 100px 20px;
@@ -218,6 +274,75 @@ footer p {
     margin-bottom: 5px;
 }
 
+/* --- Seção Morumbi --- */
+.morumbi-section {
+    padding: 100px 20px;
+    background-color: var(--spfc-black); /* Fundo preto para dar contraste */
+    text-align: center;
+}
+
+/* Modificador para deixar o título branco nessa seção escura */
+.morumbi-section .section-title {
+    color: var(--spfc-white);
+}
+
+.morumbi-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.morumbi-image {
+    flex: 1; /* Ocupa 50% do espaço */
+}
+
+.morumbi-image img {
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid var(--spfc-red);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.morumbi-image img:hover {
+    transform: scale(1.02); /* Efeito de zoom leve ao passar o mouse na foto */
+}
+
+.morumbi-text {
+    flex: 1; /* Ocupa os outros 50% do espaço */
+    color: var(--spfc-white);
+}
+
+.morumbi-text h3 {
+    font-size: 2.2rem;
+    color: var(--spfc-red);
+    margin-bottom: 20px;
+}
+
+.morumbi-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #cccccc; /* Cinza claro para leitura mais confortável */
+}
+
+.morumbi-stats {
+    list-style: none;
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 4px solid var(--spfc-red);
+}
+
+.morumbi-stats li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--spfc-white);
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .navbar {
@@ -232,5 +357,9 @@ footer p {
     
     .hero-content h1 {
         font-size: 2.5rem;
+    }
+    .morumbi-content {
+        flex-direction: column; /* No celular, empilha a foto e o texto */
+        gap: 30px;
     }
 }
